@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <header>All Purpose Budget Calculator</header>
+
+    <section class="row" id="index">
+        <section class="card" class="column">
+            <h1>
+                Career Options (2024)
+            </h1>
+            <section class="row">
+                <sections class="column border">
+                    <p>Accountant $63,247</p>
+                    <p> Architect $53,795</p>
+                    <p>Business Manager $69,807</p>
+                    <p>Computer Technician $48,000</p>
+                    <p>Doctor $170,00</p>
+                    <p>Detective $62,000 </p>
+                    <p>Electrician $64,000</p>
+                    <p>Engineer $71,000</p>
+                </sections>
+                <section class="column border">
+                    <p>Industrial Mechanic $48,000</p>
+                    <p>Lab Technician $53,000</p>
+                    <p>Lawyer $93,000</p>
+                    <p>Media $57,000</p>
+                    <p>Military $53,000</p>
+                    <p>Nurse $80,000</p>
+                    <p>Pharmacist $110,000 </p>
+                    <p>Police Officer $57,000</p>
+                </section>
+            </section>
+            <section class="next">
+                <a href="careers.html">More Careers</a>
+               </section>
+        </section>
+        <section class="card column">
+            <img src="">
+            <h1>
+                your income
+            </h1>
+            <section class="row">
+
+                <section class="taxes">
+                    <p>Gross Yearly Income </p>
+                    <p>Gross Monthly Income</p>
+                    <p>Federal Taxes 12%</p>
+                    <p> State Taxes 7%</p>
+                    <p>Social Security 6.2%</p>
+                    <p>Medicare 1.45%</p>
+                    <p>Retirement Investment 5%</p>
+                    <p> Medicare Insurance </p>
+                    <p>Net Monthly Income</p>
+                </section>
+
+                <section class="column costbudgetcolumn">
+                    <input id="grossyear" type="number" placeholder="$$$$">
+                    <p id="grossmonthly">0</p>
+                    <p id="fedtaxes">0</p>
+                    <p id="statetaxes">0</p>
+                    <p id="socialsec">0</p>
+                    <p id="medicare">0</p>
+                    <p id="retirement">0</p>
+                    <p id="insurance">0</p>
+                    <p id="netmonthly">0</p>
+
+                </section>
+                </section>  
+                <section class="next">
+                    <button onclick="changepage()">Next Step</button>
+                   </section>
+            </section>
+            
+        </section>
+    </section>
+
+<!-- page 1 up, page 2 down -->
+
+    <section class="hidden" id="budget">
+        <section class="row">
+   
+            <section class="column card">
+                <img src="img/america.png" alt="Your state">
+                <h1>Average Spending for Your Income Level</h1>
+                <section class="row">
+                    <section class="column">
+                        <p>Monthly Income</p>
+                        <p>Savings</p>
+                        <p>Housing</p>
+                        <p>Utilities</p>
+                        <p>Transportation</p>
+                        <p>Student Loans</p>
+                        <p>Food</p>
+                        <p>Clothing</p>
+                        <p>Personal</p>
+                        <p>Remainder</p>
+                    </section>
+                    <section class="column costbudgetcolumn">
+                        <p id="netmonthly3">0</p>
+                        <p id="savings">0</p>
+                        <p id="housing">0</p>
+                        <p id="utilities">0</p>
+                        <p id="transportation">0</p>
+                        <p id="studentloans">0</p>
+                        <p id="food">0</p>
+                        <p id="clothing">0</p>
+                        <p id="personal">0</p>
+                        <p id="remainder">0</p>
+                    </section>
+
+                </section>
+            </section>
+            <section class="column card">
+                <img src="img/account.png" alt="Default User Icon">
+                <h1>Your Monthly Spending</h1>
+                <section class="row">
+                    <section class="column">
+                        <p>Monthly Income</p>
+                        <p>Savings</p>
+                        <p>Housing</p>
+                        <p>Utilities</p>
+                        <p>Transportation</p>
+                        <p>Student Loans</p>
+                        <p>Food</p>
+                        <p>Clothing</p>
+                        <p>Personal</p>
+                        <p>Remainder</p>
+                    </section>
+                    <!-- P stands for Personal  -->
+                    <form class="column monthlyspending">
+                        <p id="netmonthly2">0</p>
+                        <input id="Psavings" placeholder="0" type="number">
+                        <input id="Phousing" placeholder="0" type="number">
+                        <input id="Putilities" placeholder="0" type="number">
+                        <input id="Ptransportation" placeholder="0" type="number">
+                        <input id="Pstudentloans" placeholder="0" type="number">
+                        <input id="Pfood" placeholder="0" type="number">
+                        <input id="Pclothing" placeholder="0" type="number">
+                        <input id="Ppersonal" placeholder="0" type="number">
+                        <p id="Premainder">0</p>
+                    </form>
+                </section>
+            </section>
+            <section class="column card">
+                <img src="img/pie-chart.png" alt="A Pie Chart">
+                <h1> Percentages of Your Income</h1>
+                <section class="row">
+                    <section class="column">
+                        <p>Monthly Income</p>
+                        <p>Savings</p>
+                        <p>Housing</p>
+                        <p>Utilities</p>
+                        <p>Transportation</p>
+                        <p>Student Loans</p>
+                        <p>Food</p>
+                        <p>Clothing</p>
+                        <p>Personal</p>
+                        <p>Remainder</p>
+                    </section>
+                    <section class="column costbudgetcolumn">
+                        <p>100%</p>
+                        <p id="Piesavings">0</p>
+                        <p id="Piehousing">0</p>
+                        <p id="Pieutilties">0</p>
+                        <p id="Pietransportation">0</p>
+                        <p id="Piestudentloans">0</p>
+                        <p id="Piefood">0</p>
+                        <p id="Pieclothing">0</p>
+                        <p id="Piepersonal">0</p>
+                        <p id="Pieremainder">0</p>
+                    </section>
+
+                </section>
+            </section>
+        </section>
+        <button class="back" onclick="goback()">Back</button>
+    </section>
+</body>
+
+</html>

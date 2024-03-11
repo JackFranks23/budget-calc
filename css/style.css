@@ -1,0 +1,159 @@
+*{box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+p,h1,img{
+    color: #EAECE9;
+}
+.column{
+    display: flex;
+    flex-flow: column;
+    margin: 5%;
+    width: 50%;
+}
+
+.row{
+    display: flex;
+    flex-flow: row;
+
+}
+
+.card>h1 {
+    display: flex;
+    align-self: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: #2A2A2A;
+    width: 48%;
+    margin: 1%;
+    padding-top: 1%;
+    justify-content: center;
+    border-radius: 0.3rem;
+}
+.border > p {
+    border-style: solid;
+    border-color:#65844F;
+    background-color: #65844F;
+    margin: 5%;
+    border-radius: .3rem;
+    padding: 0.6rem;
+
+}
+.taxes {
+    color: #EAECE9;
+    display: flex;
+    flex-flow: column;
+    margin: 5%;
+    /* width: 48%; */
+}
+p {
+    width: 80%;
+    font-size: 18px;
+    padding: 5px;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+
+header{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: #65844F;
+    font-weight: bolder;
+}
+
+.number {
+    color: #EAECE9;
+    display: flex;
+    flex-flow: column;
+    margin: 5%;
+    width: 48%;
+}
+
+.costbudgetcolumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.monthlyspending {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.column>input {
+    padding: 4%;
+}
+
+.next {
+    background-color: #65844F;
+    align-self: center;
+    width: 30%;
+    justify-content: center;
+    height: 6%;
+    border-style: solid;
+    border-color:#65844F;
+    border-radius: .5rem;
+    padding: 0.6rem;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.next > a,
+.next > button {
+    color: #EAECE9;
+    text-decoration: none;  
+    justify-content: center;
+    align-self: center;
+    font-size: 36px;
+background-color: #65844F;
+border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.back {
+    background-color: #65844F;
+    align-self: center;
+    width: 30%;
+    justify-content: center;
+    border-style: solid;
+    border-color:#65844F;
+    border-radius: .5rem;
+    padding: 0.6rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 1%;
+    height: 10%;
+    font-size: 36px;
+    color: #EAECE9;
+    text-decoration: none;
+}
+img {
+    max-width: 150px;
+    align-self: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.stupid {
+    color: #2A2A2A;
+    text-decoration: none;
+}
+
+.stupid:hover {
+    cursor: default;
+}
+
+input {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
