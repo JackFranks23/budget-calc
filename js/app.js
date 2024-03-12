@@ -34,37 +34,34 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("remainder").innerText = ((Math.round(netMonthly*100*.10)/100));
         
         
-
-
         let chartsavings = document.getElementById('Psavings').value;
-        document.getElementById("Piesavings").innerText = (((Math.round((chartsavings / netMonthly)*100.00)) + '%'));
-
         let charthousing = document.getElementById('Phousing').value;
-        document.getElementById("Piehousing").innerText = (((Math.round((charthousing / netMonthly)*100.00)) + '%'));
-
         let chartutilties = document.getElementById('Putilities').value;
-        document.getElementById("Pieutilties").innerText = (((Math.round((chartutilties / netMonthly)*100.00)) + '%'));
-
         let charttransportation = document.getElementById('Ptransportation').value;
-        document.getElementById("Pietransportation").innerText = (((Math.round((charttransportation / netMonthly)*100.00)) + '%'));
-
         let chartstudentloans = document.getElementById('Pstudentloans').value;
-        document.getElementById("Piestudentloans").innerText = (((Math.round((chartstudentloans / netMonthly)*100.00)) + '%'));
-
         let chartfood = document.getElementById('Pfood').value;
-        document.getElementById("Piefood").innerText = (((Math.round((chartfood / netMonthly)*100.00)) + '%'));
-
         let chartclothing = document.getElementById('Pclothing').value;
-        document.getElementById("Pieclothing").innerText = (((Math.round((chartclothing / netMonthly)*100.00)) + '%'));
-
         let chartpersonal = document.getElementById('Ppersonal').value;
+
+
+        document.getElementById("Piesavings").innerText = (((Math.round((chartsavings / netMonthly)*100.00)) + '%'));
+        document.getElementById("Piehousing").innerText = (((Math.round((charthousing / netMonthly)*100.00)) + '%'));
+        document.getElementById("Pieutilties").innerText = (((Math.round((chartutilties / netMonthly)*100.00)) + '%'));
+        document.getElementById("Pietransportation").innerText = (((Math.round((charttransportation / netMonthly)*100.00)) + '%'));
+        document.getElementById("Piestudentloans").innerText = (((Math.round((chartstudentloans / netMonthly)*100.00)) + '%'));
+        document.getElementById("Piefood").innerText = (((Math.round((chartfood / netMonthly)*100.00)) + '%'));
+        document.getElementById("Pieclothing").innerText = (((Math.round((chartclothing / netMonthly)*100.00)) + '%'));
         document.getElementById("Piepersonal").innerText = (((Math.round((chartpersonal / netMonthly)*100.00)) + '%'));
 
 
-        document.getElementById('Premainder').innertext = (netMonthly - chartsavings - charthousing - chartutilities - chartransportation - chartstudentloans - chartfood - chartcothing - chartpersonal);
+        let chartremainder = ((Math.round((netMonthly - chartsavings - charthousing - chartutilties - charttransportation - chartstudentloans - chartfood - chartclothing - chartpersonal)*100)/100));
 
-        let chartremainder = document.getElementById("Premainder").value;
+        document.getElementById("Premainder").innerText = chartremainder
         document.getElementById("Pieremainder").innerText = (((Math.round((chartremainder / netMonthly)*100.00)) + '%'));
+        
+        // document.getElementById('Premainder').innertext = (netMonthly - chartsavings - charthousing - chartutilities - chartransportation - chartstudentloans - chartfood - chartcothing - chartpersonal);
+
+
 
     });
 
